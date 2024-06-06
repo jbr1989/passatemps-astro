@@ -1,0 +1,34 @@
+---
+import PageSection from "../components/PageSection.astro";
+import PageLayout from "../layouts/PageLayout.astro";
+---
+
+<PageLayout meta={{ title: "Sopa de lletres" }}>
+
+    <PageSection title="DEFINICIÓ">
+        <blockquote>
+            <img src="/img/sopa_lletres/sopa.png" alt="Sopa de lletres"/>
+            <div class="cita">La sopa de lletres és un passatemps  que consisteix a localitzar una sèrie de paraules en una graella plena de lletres, de manera que es pugui llegir en vertical, horitzontal o diagonal. Alguns mots estan en sentit invers i junt amb combinacions sense significat per augmentar la dificultat.</div>
+        </blockquote>
+    </PageSection>
+
+    <PageSection title="HISTORIA">
+        <p>
+            <img src="media/pedro.jpg" alt="Pedro Ocón de Oro" title="Pedro Ocón de Oro" class="esq"/>
+            La sopa de lletres va ser inventat per l’espanyol Pedro Ocón de Oro que amb només 16 anys va guanyar un concurs de crucigrames del diari Madrid i va començar a crear els seus propis pasatemps. Aquest mateix any de 1948 va néixer el jeroglífic. Era el primer dels 125 tipus diferents que va inventar en els seus 40 anys d'ocupació al món de l'oci. A aquesta fórmula d'entreteniment la van succeir altres: el Oconograma, el Cuadrograma i la Transfusió de lletres. Uns dels majors èxits va arribar l’any 1952 amb la creació del crucigrama en blanc. Més tard va idear la Sopa de lletres.
+        </p>
+    </PageSection>
+
+    <PageSection title="ESTRATÈGIES">
+        <ul>
+            <li><p>Una estratègia comú per a trobar les paraules és anar línia per línia buscant la primera lletra de la paraula. Un cop trobada mirar totes les direccions possibles, verticals, horitzontals i diagonals. Si no es troba la paraula s’ha de continuar fins a trobar la primera lletra que contingui la paraula.</p></li>
+            <li><p>Una altra estratègia es buscar les lletres especials (no comunes) com poden ser: K, W, X, Z. Llavors fer el mateix que en la estràtegia anterior, mirar en totes les direccions.</p></li>
+            <li><p>Per últim, la estratègia de buscar lletres repetides, ja que no són molt habituals.</p></li>
+        </ul>
+
+        <p>No obstant això, si en la sopa de lletres no es donen les paraules a buscar s’ha de anar línia per línia de forma horitzontal, després vertical i diagonal, totes pels dos sentits.</p>
+
+        <p>A vegades, la sopa de lletres en si ens pot ajudar. Les sopes de lletres automàtiques (fetes per ordinador) tendeixen en seguir un patró, per exemple una sobre l’altra de forma horitzontal.</p>
+    </PageSection>
+
+</PageLayout>

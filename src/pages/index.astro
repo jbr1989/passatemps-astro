@@ -1,0 +1,31 @@
+---
+import PageLayout from "../layouts/PageLayout.astro";
+import { tipusPassatemps } from "../site.config";
+---
+
+<PageLayout meta={{ title: "Home" }}>
+
+	<section>
+		<h1 class="title mb-6">DEFINICIÓ</h1>
+		<p class="mb-4">
+			Un passatemps, afició o hobby és una activitat sense finalitat productiva concreta, el valor de la qual resideix en l'entreteniment d'aquell que ho executa.
+		</p>
+		<p class="mb-4">
+			Passatemps pot referir-se també a un joc d'enginy, coneixement del llenguatge, resolució de problemes espacials, etc.; habituals en molts periódics i revistes d'informació general. Alguns passatemps comuns són:
+		</p>
+	</section>
+
+	<section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+		{
+			tipusPassatemps.map(({ title, img, path }) => (
+				<a href={path}>
+					<div class="flex flex-col gap-4">
+						<h2 class="title mb-4 text-xl">{title}</h2>
+						<img src={img} alt={title} class="rounded-lg"/>
+					</div>
+				</a>
+			))
+		}
+	</section>
+
+</PageLayout>

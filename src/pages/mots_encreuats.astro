@@ -1,0 +1,48 @@
+---
+import PageSection from "../components/PageSection.astro";
+import PageLayout from "../layouts/PageLayout.astro";
+---
+
+<PageLayout meta={{ title: "Mots encreuats" }}>
+
+    <PageSection title="DEFINICIÓ">
+        <blockquote>
+            <img src="/img/mots_encreuats/crucigrama4.png" alt="Exemple de mots encreuats" title="Mots encreuats"/>
+            <div class="cita">Els mots encreuats és un trencaclosques que normalment adopta la forma de reixa quadrada o rectangular, de quadres blancs i negres. L’objectiu és omplir les caselles en blanc amb lletres, de tal forma que llegides en horitzontal i en vertical formen determinades paraules de les quals es dóna alguna pista.</div>
+        </blockquote>
+    </PageSection>
+
+    <PageSection title="HISTORIA">
+        <img class="esq" src="/img/mots_encreuats/arthur.png" alt="Mots encreuats de Arthur Wyne" title="Mots encreuats de Arthur Wyne" />
+        <p>Qui va ser el pare i quan va néixer els mots encreuats és motiu de discòrdia entre italians i nord-americans. Oficialment, es considera com el primer mots encreuats de la historia és el publicat en el suplement FUN del diari New York World el 21 de desembre de 1913 per Arthur Wyne.</p>
+        <p>No obstant això, hi ha qui defensa que l'italià Giuseppe Airoldi és el verdader pare del passatemps, el 14 de setembre de 1890, publicat en el II Secolo Illustrato Della Domenica. Airoldi va morir uns dies abans que el periòdic americà l’imites, per això mai va poder reclamar la paternitat.</p>
+    </PageSection>
+
+    <PageSection title="VARIANTS">
+        <p>En l’actualitat hi ha moltes variacions de mots encreuats, entre les quals es troben:</p>
+
+        <ol id="variants" class="col_2">
+            <li>
+                <strong>Mots encreuats en blanc:</strong> És considerat com el més difícil perquè no hi ha quadres negres, els quals han de ser col·locats pel mateix participant a mesura que avança en el joc.<br>
+                <img class="tipus" src="/img/mots_encreuats/crucigrama1.png" alt="Mots encreuats en blanc" title="Mots encreuats en blanc"/>
+            </li>
+            <li>
+                <strong>Mots encreuats amb personatge:</strong> Aquest inclou una fotografia sobre el protagonista d'algunes de les definicions incloses.<br>
+                <img class="tipus" src="/img/mots_encreuats/crucigrama2.png" alt="Mots encreuats amb personatge" title="Mots encreuats amb personatge"/>
+            </li>
+            <li>
+                <strong>Mots encreuats sil·làbics:</strong> Consisteix a incloure en cada quadre una síl·laba en lloc d'una lletra.<br>
+                <img class="tipus" src="/img/mots_encreuats/crucigrama3.png" alt="Mots encreuats sil·làbics" title="Mots encreuats sil·làbics"/>
+            </li>
+            <li>
+                <strong>Mots encreuats críptics:</strong> Utilitza una frase que amaga instruccions per a construir o descobrir la solució d'entre les paraules de la frase.<br>
+                <img class="tipus2" src="/img/mots_encreuats/crucigrama4.png" alt="Mots encreuats críptics" title="Mots encreuats críptics"/>
+            </li>
+            <li>
+                <strong>Mots encreuats translator:</strong> Tenen l’objectiu de facilitar l’aprenentatge d'una altra llengua.<br>
+                <img class="tipus" src="/img/mots_encreuats/crucigrama5.jpg" alt="Mots encreuats translator" title="Mots encreuats translator"/>
+            </li>
+        </ol>
+    </PageSection>
+
+</PageLayout>

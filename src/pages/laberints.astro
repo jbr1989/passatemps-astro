@@ -1,0 +1,64 @@
+---
+import PageSection from "../components/PageSection.astro";
+import PageLayout from "../layouts/PageLayout.astro";
+---
+
+<PageLayout meta={{ title: "Laberints" }}>
+
+    <PageSection title="DEFINICIÓ">
+        <blockquote>
+            <img src="/img/laberints/tipus4.png" alt="Exemple de laberint" title="Laberint"/>
+            <p>Un laberint és un passatemps complex en forma d'un passatge de ramificacions complexes a través dels quals el jugador ha de trobar una ruta.</p>
+        </blockquote>
+    </PageSection>
+
+	<PageSection title="HISTORIA">
+        <p>El laberint és conegut des de la prehistòria, se'n va trobar un tallat a una banya de mamut del paleolític i a Goa es va trobar un petròglif amb un laberint més sofisticat gravat que data com a mínim del 2500 aC.</p>
+        <p>En l’antiguitat destaquen el laberint d'Egipte i el laberint de Creta.</p>
+            <div>
+            <object class="video esq" type="application/x-shockwave-flash" data="//www.youtube.com/v/O1SHy6ZnJJk&amp;hl=es_ES&amp;fs=1&amp;rel=0&amp;color1=0x3a3a3a&amp;color2=0x999999" width="330" height="250">
+                <param name="quality" value="high" />
+                <param name="allowFullScreen" value="true"/>
+                <div class="atencio">ERROR al cargar video<br/>No tens el connector de Flash!</div>
+            </object>
+            
+            <p>El laberint d'Egipte es va construir al segle XIX aC. situat prop del llac Moeris, conegut actualment amb el nom de Birkat Qarin, a l’oest del riu Nil i a 80 quilòmetres al sud de la ciutat del Cairo. Es componia de 3000 habitacions, 1500 subterrànies i 1500 sobre aquestes, repartides en 12 palaus, amb 12 portes cadascun enfrontades unes amb les altres, sis al Nord i sis al Sud, tot estava rodejat per un mur circular. El laberint d'Egipte és el laberint més gran construït mai, no obstant això, el més conegut ha sigut el laberint de Creta.</p>
+        </div>
+        <div>
+            <img class="esq" src="/img/laberints/minotauro.jpg" alt="Representació de la mort del minotaure" title="Representació de la mort del minotaure" style="width:320px;"/>
+            <p>A imitació del laberint egipci, els grecs van construir el llegendari laberint de Creta. Construït  uns 130 anys abans de Jesucrist, prop de la ciutat de Cnosa i baix de terra. Segons la llegenda  en ell vivia el Minotaure, monstre que s'alimentava de carn humana i al que va donar mort Teseu guiat pel fil d'Ariadna, que li va permetre trobar la sortida.</p> 
+        </div>
+    </PageSection>
+
+    <PageSection title="VARIANTS">
+        <p>Existeixen sis categories per a classificar els laberints:</p>
+
+        <ol id="variants" class="col_2">
+            <li>
+                <strong>Laberint clàssic o univiari:</strong> Laberints que tenen una única ruta.<br>
+                <img class="tipus" src="/img/laberints/tipus1.gif" alt="Laberint clàssic o univari" title="Laberint clàssic o univari"/>
+            </li>
+            <li>
+                <strong>Laberint de connexió simple:</strong> Laberints amb múltiples rutes no connectades entre elles, donant lloc a rutes sense sortida.<br>
+                <img class="tipus" src="/img/laberints/tipus2.png" alt="Laberint de connexió simple" title="Laberint de connexió simple"/>
+            </li>	
+            <li>
+                <strong>Laberint de connexió múltiple:</strong> Laberints amb múltiples rutes connectades entre elles.<br>
+                <img class="tipus" src="/img/laberints/tipus3.jpg" alt="Laberint de connexió múltiple" title="Laberint de connexió múltiple"/>
+            </li>
+            <li>
+                <strong>Laberint entrellaçat:</strong> Laberint amb rutes  que van per sota i sobre l'altra.<br>
+                <img class="tipus" src="/img/laberints/tipus4.png" alt="Laberint entrellaçat" title="Laberint entreçallat"/>
+            </li>
+            <li>
+                <strong>Laberint planair:</strong> Laberint on les rutes dels extrems es connecten entre si.<br>
+                <img class="tipus" src="/img/laberints/tipus5.png" alt="Laberint planair" title="Laberint planair"/>
+            </li>
+            <li>
+                <strong>Laberint lògic:</strong> Laberint amb regles lògiques. Exemple: Laberint amb ordres de direcció.<br>
+                <img class="tipus" src="/img/laberints/tipus6.png" alt="Laberint logic" title="Laberint logic"/>
+            </li>		
+        </ol>
+    </PageSection>
+
+</PageLayout>

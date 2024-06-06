@@ -1,0 +1,32 @@
+---
+import type { SiteMeta } from "../types";
+import { siteConfig } from "../site.config";
+
+import PageHead from "../components/layout/PageHead.astro";
+import Footer from "../components/layout/Footer.astro";
+import Header from "../components/layout/Header.astro";
+
+
+interface Props {
+	meta: SiteMeta;
+}
+
+const {
+	meta: { articleDate, description = siteConfig.description, ogImage, title },
+} = Astro.props;
+---
+
+
+<html lang={siteConfig.lang}>
+	<head>
+		<PageHead articleDate={articleDate} description={description} ogImage={ogImage} title={title} />
+	</head>
+	<body>
+		<!-- <ThemeProvider /> -->
+		<Header />
+		<main id="main">
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>
